@@ -1,0 +1,76 @@
+@use '../../styles/mixin' as *;
+@use '../../styles/var' as *;
+
+@media screen and (max-width: 711px){
+    .home{
+        display: flex;
+        background-image: url(../../../public/homeBackground.svg);
+        width: 100%;
+        background-repeat: no-repeat;
+        &__container{
+            margin-left: 60px;
+            margin-top: 350px;
+            width: 900px;
+            h1{
+                font-family: Barlow;
+                font-size: $titleSize;
+                color: $secondaryColor;
+                font-weight: 400;
+                background-color: rgba(48, 48, 48, 0.4);
+                border-radius: 10px;
+                padding: 20px; // Adicionando padding para melhorar a visualização
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 1100px){
+        .home{
+            display: flex;
+            background-image: url(../../../public/homeBackground.svg);
+            width: 100%;
+            height: 823px;
+            background-repeat: no-repeat;
+            &__container{
+                margin-left: 60px;
+                align-items: end;
+                margin-bottom: 20px;
+                width: 90%;
+                h1{
+                    font-family: Barlow;
+                    font-size: $titleSizeTablet;
+                    color: $secondaryColor;
+                    font-weight: 400;
+                    background-color: rgba(48, 48, 48, 0.4);
+                    border-radius: 10px;
+                    padding: 20px; // Adicionando padding para melhorar a visualização
+                }
+            }
+        }
+    
+}
+
+
+    .home{
+        display: flex;
+        background-image: url(../../../public/homeBackground.svg);
+        background-repeat: repeat;
+        height: 823px;
+        &__container{
+            margin-left: 105px; // Corrigindo a escrita do 'px'
+            margin-top: 400px;
+            h1{
+                font-family: Barlow;
+                font-size: $titleSize;
+                color: $secondaryColor;
+                font-weight: 400;
+                background-color: rgba(48, 48, 48, 0.4);
+                border-radius: 10px;
+                padding: 20px; // Adicionando padding para melhorar a visualização
+            }
+        }
+    }
+
+
