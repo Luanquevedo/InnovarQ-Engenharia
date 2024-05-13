@@ -39,3 +39,74 @@
         }
     }
 }
+
+@media (max-width: 1099px) {
+    .valores__card{
+        width: 354px;
+        height: 204px;
+        width: 354px;
+        max-height: 204px;
+        max-width: 354px;
+    
+    }
+    .valores{
+        margin-top: 100px;
+    
+        &__title{
+            width: 733px;
+            h1{
+                font-size: 20px;
+            }
+        }
+        
+    
+        &__container{
+            margin-top: 80px;
+            margin: 100px 80px 80px 80px;
+            gap: 20px;
+            h1{
+                font-size: 20px;
+            }
+    
+            p{
+                font-size: 20px;
+            }
+        }
+    }       
+}
+
+
+@media (max-width: 768px) {
+    .valores__card{
+        width: 354px;
+        height: 104px;
+        max-height: 204px;
+        max-width: 300px;
+    
+    }
+    .valores{
+        margin-top: 100px;
+    
+        &__title{
+            width: 383px;
+            h1{
+                font-size: 14px;
+            }
+        }
+        
+    
+        &__container{
+            display: flex;
+            flex-direction: column;            
+            margin-top: 40px;
+            gap: 15px;
+            h1{
+                font-size: 18px;
+            }
+    
+            p{
+                font-size: 18px;
+            }
+        }
+    }       
+}

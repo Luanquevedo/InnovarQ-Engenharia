@@ -1,0 +1,68 @@
+@use "../../styles/var" as *;
+@use "../../styles/mixin" as *;
+
+
+@media screen and (max-width: 1100px){
+    .navbar__mobile-icon{
+        background: $primaryColor;;
+    }
+    .navbar__logo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 20px;
+    }
+    .navbar{
+        height: 150px;
+    
+        &__container{
+            display: flex;
+            margin-right: 65px;
+            gap: 25px;
+
+            button{
+                background-color: none;
+                border: none;
+            }
+        }
+        
+    }
+    
+}
+
+
+.navbar__logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 20px;
+}
+.navbar{
+    background-color: $primaryColor;
+    
+    color: $secondaryColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__container{
+        display: flex;
+        margin-right: 65px;
+        gap: 25px;
+
+        a{
+            text-decoration: none;
+            color: $secondaryColor;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+    }
+
+    a:hover{
+        color: rgb(233, 181, 51);
+    }
+
+    
+}
+

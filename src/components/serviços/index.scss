@@ -82,3 +82,131 @@
               
     }
 }
+
+@media (max-width: 1099px) {
+    .serv__blog{
+        gap: 20px;
+    }
+    .serv__a{
+            width: 372px;
+            height: 112px;
+            font-size: 17px;
+            border-radius: 50px;
+            padding: 20px;  
+    }
+    
+    .serv__b{
+        width: 58px;
+        height: 58px;
+        border-radius: 50px;
+        img{
+            width: 45px;
+        }
+    }
+    
+    .serv__c{
+        width: 216px;
+        height: 93px;
+        font-size: 20px;
+        font-weight: 700;
+        border-radius: 40px;
+        padding: 20px;  
+    }
+    .serv__card{
+        max-width: 675px;
+        gap: 50px;
+
+        img{
+            width: 214px;
+        }
+        h1{
+            font-size: 20px;
+        }
+    
+        p{
+            font-size: 14px;
+        }
+    }
+    
+    .serv__link{
+        margin-top: 80px;
+        gap: 80px;
+    }
+    .serv{
+        margin-top: 80px;
+    
+        &__title{
+            max-width: 950px;
+            margin-left: 20px;
+            justify-content: center;
+
+            h1{
+                font-size: 20px;
+            }
+    
+            p{
+                font-size: 20px;
+            }
+        }
+    
+        &__container{
+            gap: 140px;
+            margin-top: 200px;                  
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .serv__a{
+            width: 372px;
+            height: 112px;
+            font-size: 17px;
+            border-radius: 50px;
+            padding: 20px;  
+            
+    }
+    
+    .serv__b{
+        display: none;
+    }
+    .serv__card{
+        max-width: 675px;
+        gap: 10px;
+
+        img{
+            width: 134px;
+        }
+        h1{
+            font-size: 20px;
+        }
+    
+        p{
+            font-size: 14px;
+        }
+    }
+    
+    .serv__link{
+        margin-top: 40px;
+        gap: 40px;
+    }
+    .serv{
+        margin-top: 40px;
+    
+        &__title{
+
+
+            h1{
+                font-size: 14px;
+            }
+    
+            p{
+                font-size: 13px;
+            }
+        }
+    
+        &__container{
+            gap: 50px;
+            margin-top: 80px;                  
+        }
+    }
+}
