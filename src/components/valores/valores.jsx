@@ -4,70 +4,70 @@ import './index.scss'
 const Valores = () => {
   return (
     <section>
-      <div>
-        <div>
+      <div className='valores'>
+        <div className='valores__title'>
           <h1>Na InnovarQ Engenharia, nossos valores refletem nossa essência e guiam nossas ações. Conheça o que nos motiva a construir um futuro melhor para todos.</h1>
         </div>
-        <div>
-          <div>
+        <div className='valores__container'>
+          <div className='valores__card'>
             <h1>
               Qualidade
             </h1>
             <p>
-              Compromisso com a<br/>
-              excelência e a entrega de<br/>
-              resultados superiores.
+              Compromisso com a 
+              excelência e a entrega de 
+              resultados superiores. 
             </p>
           </div>
-          <div>
+          <div className='valores__card'>
             <h1>
               Inovação
             </h1>
             <p>
-              Busca constante por<br/>
-              soluções criativas e<br/>
-              tecnologicamente<br/>
-              avançadas.
+              Busca constante por 
+              soluções criativas e 
+              tecnologicamente 
+              avançadas. 
             </p>
           </div>
-          <div>
+          <div className='valores__card'>
             <h1>
               Sustentabilidade
             </h1>
             <p>
-              Adoção de práticas<br/>
-              ecoeficientes e responsáveis<br/>
-              em todos os projetos.
+              Adoção de práticas 
+              ecoeficientes e responsáveis 
+              em todos os projetos. 
             </p>
           </div>
-          <div>
+          <div className='valores__card'>
             <h1>
               Responsabilidade Social
             </h1>
             <p>
-              Contribuição ativa para o<br/>
-              desenvolvimento sustentável<br/>
-              da comunidade e do meio<br/>
+              Contribuição ativa para o 
+              desenvolvimento sustentável 
+              da comunidade e do meio 
               ambiente.
             </p>
           </div>
-          <div>
+          <div className='valores__card'>
             <h1>
               Comprometimento
             </h1>
             <p>
-              Dedicação total à satisfação<br/>
-              dos clientes e ao sucesso de<br/>
-               cada projeto.
+              Dedicação total à satisfação 
+              dos clientes e ao sucesso de 
+               cada projeto. 
             </p>
           </div>
-          <div>
+          <div className='valores__card'>
             <h1>
               Qualidade
             </h1>
             <p>
-              Compromisso com a excelência e<br/>
-              a entrega de resultados<br/>
+              Compromisso com a excelência e 
+              a entrega de resultados 
               superiores.
             </p>
           </div>

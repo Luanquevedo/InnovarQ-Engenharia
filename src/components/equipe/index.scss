@@ -1,0 +1,41 @@
+@use '../../styles/var' as *;
+
+.equipe__card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 80px;
+    
+    h1{
+        font-size: 28px;
+    }
+
+    p{
+        font-size: 24px;
+    }
+
+}
+.equipe{
+    display: flex;
+    flex-direction: column;
+    background-color: $primaryColor;
+    color: $secondaryColor;
+    height: 1700px;
+    
+
+    &__title{
+        font-size: 40px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-left: 60px;
+    }
+
+    &__container{
+        margin-left: 60px;
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        max-width: 1321px;
+        
+    }
+}

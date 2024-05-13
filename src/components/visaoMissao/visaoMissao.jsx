@@ -4,11 +4,11 @@ import './index.scss'
 const VisaoMissao = () => {
   return (
     <section>
-      <div>
+      <div className='visao'>
         <div>
           <img src='visao.svg'alt='Sobre'/>
         </div>
-        <div>
+        <div className='visao__container'>
           <div>
             <h1>
               Visão:

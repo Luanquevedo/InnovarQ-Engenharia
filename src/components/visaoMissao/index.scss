@@ -1,0 +1,26 @@
+@use '../../styles/var' as *;
+
+.visao{
+    display: flex;
+    height: 628px;
+    background-color: $primaryColor;
+    color: $secondaryColor;
+    margin-top: 100px;
+    align-items: center;
+    gap: 90px;
+    justify-content: center;
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        h1{
+            font-size: 28px;
+        }
+
+        p{
+            font-size: 24px;
+        }
+    }
+}
