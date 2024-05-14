@@ -1,16 +1,19 @@
 import React from 'react'
 import Nav from '../../components/navBar/nav'
 import Footer from '../../components/footer/footer'
+import './index.scss'
 
 const Blog = () => {
   return (
     <>
     <Nav/>
     <main>
-      <div>
+
+      <div  className='blog'>
+      <div className='blog__title'>
         <h1>Asfalto Ecológico Permeável: Transformando a Engenharia Urbana com Sustentabilidade e Inovação</h1>
       </div>
-      <div>
+      <div className='blog__container'>
         <p>O asfalto ecológico permeável é uma inovação que está revolucionando o setor de engenharia
           de infraestrutura. Sua principal característica é a capacidade de permitir a passagem de água 
           através de sua superfície, o que traz uma série de benefícios ambientais e urbanísticos.
@@ -35,8 +38,10 @@ const Blog = () => {
           mas também para a criação de comunidades mais seguras, saudáveis e resilientes.
         </p>
       </div>
+      </div>
+
     </main>
-    <Footer/>
+    
     </>
   )
 }
