@@ -1,0 +1,76 @@
+@use '../../styles/var' as *;
+
+.visao{
+    display: flex;
+    height: 628px;
+    background-color: $primaryColor;
+    color: $secondaryColor;
+    margin-top: 100px;
+    align-items: center;
+    gap: 90px;
+    justify-content: center;
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        h1{
+            font-size: 28px;
+        }
+
+        p{
+            font-size: 24px;
+        }
+    }
+}
+
+@media (max-width: 1099px) {
+    .visao{
+        margin-top: 80px;
+        gap: 50px;
+        
+        img{
+            width: 500px;
+        }
+    
+        &__container{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+    
+            h1{
+                font-size: 20px;
+            }
+    
+            p{
+                font-size: 16px;
+            }
+        }
+    }        
+}
+@media (max-width: 768px) {
+    .visao{
+        flex-direction: column;
+        margin-top: 80px;
+        gap: 50px;
+        
+        img{
+            width: 314px;
+        }
+    
+        &__container{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+    
+            h1{
+                font-size: 14px;
+            }
+    
+            p{
+                font-size: 13px;
+            }
+        }
+    }    
+}

@@ -1,0 +1,53 @@
+@use '../../styles/var' as *;
+
+
+.home {
+    display: flex;
+    background-image: url('../../../public/homeBackground.svg');
+    background-repeat: repeat;
+    
+    
+
+    &__container {
+        margin-left: 105px;
+        margin-top: 400px;
+        width: 976px;
+        margin-bottom: 50px;
+
+        h1 {
+            font-size: 28px;
+            color: $secondaryColor;
+            font-weight: 400;
+            background-color: rgba(48, 48, 48, 0.4);
+            border-radius: 10px;
+            padding: 20px;
+        }
+    }
+
+    @media (max-width: 1099px) {
+        &__container {  // Corrigido o seletor aqui
+            margin-left: 10px;
+            width:780px;
+            justify-content: end;
+
+            h1 {
+                font-size: 20px;
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        &__container {  // Corrigido o seletor aqui
+            margin-left: 1px;
+            width:385px;
+            
+
+            h1 {
+                font-size: 14px;
+            }
+        }
+
+    }
+}
+
+
+

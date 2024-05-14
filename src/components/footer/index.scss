@@ -1,0 +1,50 @@
+@use '../../styles/var' as *;
+
+.Footer{
+    display: flex;
+    height: 195px;
+    background-color: $primaryColor;
+    color: $secondaryColor;
+    justify-content:center;
+    align-items: center;
+    gap: 200px;
+    margin-top: 100px;
+
+    &__b{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    &__a{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+    }
+    &__c{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+}
+
+@media (max-width: 1099px) {
+    .Footer{
+        height: 195px;
+        gap: 10px;
+        margin-top: 80px;
+    }
+}
+@media (max-width: 768px) {
+    .Footer{
+
+        &__b{
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+}

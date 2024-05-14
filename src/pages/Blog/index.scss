@@ -1,0 +1,28 @@
+@use '../../styles/var' as*;
+
+.blog{
+
+  background-image: url(../../../public/backgrounBlog.svg);
+  background-repeat: no-repeat;
+  height: 284px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+
+  &__title{
+    width: 1048px;
+    color: $secondaryColor;
+    margin-top: 600px;
+    font-size: 20px;
+  }
+
+  &__container{
+    margin-top: 100px;
+    width: 1000px;
+    text-align: justify; 
+    font-size: 20px;
+  }
+
+}
