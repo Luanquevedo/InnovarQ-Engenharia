@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useMemo } from 'react';
-import { Link } from 'react-router-dom'; // Importe o Link do React Router
-import './index.scss'
+import { Link } from 'react-router-dom'; 
+import './index.scss';
 import ModalMenu from '../modalmenu/modalMenu';
 
 const Nav = ({ isMobileProp, showModalProp, handleToggleModalProp, renderLinksProp }) => {
@@ -31,10 +31,10 @@ const Nav = ({ isMobileProp, showModalProp, handleToggleModalProp, renderLinksPr
 
     return (
         <nav className='navbar'>
-          <div className='navbar__logo'>
-            <img src='logo.svg' className='navbar__logo' alt='Logo' />
-            <h1>InnovarQ Engenharia</h1>
-          </div>
+            <div className='navbar__logo'>
+                <img src='logo.svg' className='navbar__logo' alt='Logo' />
+                <h1>InnovarQ Engenharia</h1>
+            </div>
             <div className='navbar__container'>
                 {isMobile ? (
                     <>
@@ -42,19 +42,19 @@ const Nav = ({ isMobileProp, showModalProp, handleToggleModalProp, renderLinksPr
                             <img src='mobileMenuIcon.svg' className='navbar__mobile-icon' alt='Mobile Icon' />
                         </button>
 
-                        {showModal && <ModalMenu handleToggleModal={handleToggleModal} />}
+                        {showModal && <ModalMenu showModal={showModal} handleToggleModal={handleToggleModal} />}
                     </>
                 ) : (
                     renderLinks && (
                         <>
                             <Link to="/" className='navbar__custom'>Home</Link>
-                            <Link to="/" className='navbar__custom'>Sobre</Link>
-                            <Link to="/" className='navbar__custom'>Missão e Visão</Link>
-                            <Link to="/" className='navbar__custom'>valores</Link>
-                            <Link to="/" className='navbar__custom'>Equipe</Link>
-                            <Link to="/" className='navbar__custom'>Serviços</Link>
-                            <Link to="/" className='navbar__custom'>blog</Link>
-                            <Link to="/" className='navbar__custom'>Fale Conosco</Link>
+                            <a href="#sobre" className='navbar__custom'>Sobre</a>
+                            <a href="#visao-missao" className='navbar__custom'>Missão e Visão</a>
+                            <a href="#valores" className='navbar__custom'>Valores</a>
+                            <a href="#equipe" className='navbar__custom'>Equipe</a>
+                            <a href="#servicos" className='navbar__custom'>Serviços</a>
+                            <Link to="/blog" className='navbar__custom'>blog</Link>
+                            <Link to="/form" className='navbar__custom'>Fale Conosco</Link>
                         </>
                     )
                 )}

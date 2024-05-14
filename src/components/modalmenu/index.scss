@@ -1,0 +1,88 @@
+@use '../../styles/var' as *;
+
+.modal-content {
+    background-color: $primaryColor !important;
+    color: $secondaryColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; // Centraliza verticalmente
+    align-items: center; // Centraliza horizontalmente
+    height: 100vh;
+    width: 100%;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 35%;
+    padding: 1rem;
+    align-items: center;
+    margin-top: -200px;
+    width: 100%; // Garante que o cabeçalho ocupe toda a largura
+}
+
+.close-button {
+    background-color: transparent !important;
+    margin-left: 1rem; // Ajuste de margem esquerda
+    margin-bottom: 1rem; // Ajuste de margem inferior
+    border: none;
+    cursor: pointer;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.modal-body a {
+    text-decoration: none;
+    font-family: Barlow;
+    color: $secondaryColor;
+    font-size: 1.5rem; // Ajuste de tamanho de fonte
+    margin-bottom: 1rem; 
+}
+
+.modal-footer {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    margin-top: 200px; // Ajuste de margem superior
+    border-top: none !important;
+    
+    &__footerMenu {
+        display: flex;
+        align-items: center;
+        gap: 1rem; // Ajuste de espaçamento entre os itens
+    }
+}
+
+@media (max-width: 768px) {
+    .modal-header {
+        margin-left: 1rem;
+        margin-top: -200px; // Ajuste de margem esquerda para resoluções menores
+    }
+    
+    .close-button {
+        margin-left: 0.5rem; // Ajuste de margem esquerda para resoluções menores
+        margin-bottom: 0.5rem; // Ajuste de margem inferior para resoluções menores
+    }
+    
+    .modal-body {
+        margin-top: 1rem; // Ajuste de margem superior para resoluções menores
+        margin-right: 0; // Remove a margem direita para resoluções menores
+    }
+    
+    .modal-body a {
+        font-size: 1.2rem; // Ajuste de tamanho de fonte para resoluções menores
+    }
+    
+    .modal-footer {
+        margin-left: 1rem; // Ajuste de margem esquerda para resoluções menores
+        margin-top: 3rem; // Ajuste de margem superior para resoluções menores
+    }
+}

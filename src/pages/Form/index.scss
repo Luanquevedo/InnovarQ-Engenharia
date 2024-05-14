@@ -1,0 +1,40 @@
+
+@use '../../styles/var' as *;
+.Form{
+    background-image: url(../../../public/backgroundForm.svg);
+    width: 100%;
+    height: 797px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    color: $secondaryColor;
+    font-size: 28px;
+
+    &__container{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        Input{
+            width: 810px;
+            height: 36.16px;
+            border-radius: 10px;
+        }
+        textarea{
+            width: 810px;
+            height: 144px;
+            border-radius: 10px;
+        }
+        button{
+            height: 37px;
+            width: 237px;
+            font-size: 22px;
+            font-weight: 700;
+            background-color: $primaryColor;
+            color: $secondaryColor;
+        }
+    }
+}

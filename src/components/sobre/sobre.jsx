@@ -4,7 +4,7 @@ import './index.scss'
 const Sobre = () => {
   return (
     <section>
-      <div className='sobre'>
+      <div className='sobre' id='sobre'>
         <img src='sobreImg.svg' alt='sobre'/>
         <div className='sobre__container'>
           <h1>

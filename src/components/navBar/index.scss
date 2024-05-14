@@ -21,7 +21,7 @@
             gap: 25px;
 
             button{
-                background-color: none;
+                background-color: transparent; /* Corrigido para remover o fundo */
                 border: none;
             }
         }

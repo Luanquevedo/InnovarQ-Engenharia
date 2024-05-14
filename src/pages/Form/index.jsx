@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-
-const Home = () => {
+import Nav from '../../components/navBar/nav';
+import Footer from '../../components/footer/footer';
+import './index.scss'
+const Form = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -47,10 +49,14 @@ const Home = () => {
   };
 
   return (
-    <main>
-      <form onSubmit={handleSubmit}>
-        <div>
+    <>
+    <Nav/>
+    <main className='Form'>
+      
+      <form onSubmit={handleSubmit} className='Form__container'>
+        <div className='Form__a'>
           <label htmlFor="name">Nome:</label>
+          <div>
           <input
             type="text"
             id="name"
@@ -59,9 +65,11 @@ const Home = () => {
             onChange={handleChange}
             required
           />
+          </div>
         </div>
-        <div>
+        <div className='Form__b'>
           <label htmlFor="email">Endereço de E-mail:</label>
+          <div>
           <input
             type="email"
             id="email"
@@ -70,9 +78,12 @@ const Home = () => {
             onChange={handleChange}
             required
           />
+          </div>
         </div>
-        <div>
+        
+        <div className='Form__c'>
           <label htmlFor="phone">Celular:</label>
+          <div>
           <input
             type="tel"
             id="phone"
@@ -81,9 +92,11 @@ const Home = () => {
             onChange={handleChange}
             required
           />
+          </div>
         </div>
-        <div>
+        <div className='Form__d'>
           <label htmlFor="message">Mensagem:</label>
+          <div>
           <textarea
             id="message"
             name="message"
@@ -91,11 +104,15 @@ const Home = () => {
             onChange={handleChange}
             required
           ></textarea>
+          </div>
         </div>
-        <button type="submit">Enviar</button>
+        <button type="submit">Enviar sua mensagem</button>
       </form>
+      
     </main>
+    <Footer/>
+    </>
   );
 };
 
-export default Home;
+export default Form;
