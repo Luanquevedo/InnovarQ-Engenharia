@@ -38,9 +38,13 @@ const Blog = () => {
           mas também para a criação de comunidades mais seguras, saudáveis e resilientes.
         </p>
       </div>
+      <div className='blog__footer'>
+      <Footer/>
       </div>
-
+      </div>
+      
     </main>
+    
     
     </>
   )
